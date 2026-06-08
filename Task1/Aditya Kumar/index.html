@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Spreadsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="app-title">Spreadsheet</h2>
+
+    <div class="formula-container">
+        <label for="formula-input">Formula:</label>
+        <input type="text" id="formula-input" placeholder="Select a cell to edit..." />
+    </div>
+
+    <div id="grid-container"></div>
+
+    <div class="toolbar">
+        <button id="btn-undo" title="Undo (Ctrl+Z)">Undo</button>
+        <button id="btn-redo" title="Redo (Ctrl+Y)">Redo</button>
+        <span class="separator">|</span>
+        <button id="btn-add-row">+ Row</button>
+        <button id="btn-add-col">+ Column</button>
+        <button id="btn-clear" class="btn-danger">Clear All</button>
+        <button id="btn-save" class="btn-primary">Save Changes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
