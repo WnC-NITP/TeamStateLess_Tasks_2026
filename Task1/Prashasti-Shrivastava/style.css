@@ -52,3 +52,17 @@ button {
 #clear{
     background-color: #d32f2f;
 }
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+table th, table td {
+    border: 1px solid var(--light-black);
+    padding: 8px;
+    text-align: center;
+}
