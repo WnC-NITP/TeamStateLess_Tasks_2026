@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.toolbar{
+    margin-bottom:15px;
+}
+
+button{
+    padding:8px 15px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+#formulaBar{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.table-container{
+    overflow:auto;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid #ccc;
+    width:100px;
+    height:35px;
+    text-align:center;
+}
+
+th{
+    background:#f4f4f4;
+}
+
+td{
+    cursor:text;
+}
+
+.selected{
+    outline:3px solid blue;
+}
