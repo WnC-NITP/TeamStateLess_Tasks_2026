@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet Application</title>
+</head>
+<body>
+   <h1>
+        Spreadsheet Application
+    </h1>
+  <div id="para">
+    <p id="p1"><b>Selected Cell:</b></p>
+    <p id="p3"></p>
+  </div>
+   
+  <div id="toolbar">
+    Formula Bar
+    <input id="formulaBar" type="text" placeholder="Formula Bar" />
+    <input id="searchBox" type="text" placeholder="Search cells or formulas" oninput="searchCells()" />
+    <button id="undo" onclick="undo()">Undo</button>
+    <button id="redo" onclick="redo()">Redo</button>
+  </div>
+   <table id="table" >
+    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>
+    <tr><th>1</th><td>100</td><td>200</td><td></td><td></td><td></td></tr>
+    <tr><th>2</th><td>150</td><td>300</td><td></td><td></td><td></td></tr>
+    <tr><th>3</th><td></td><td></td><td></td><td></td><td></td></tr>
+   </table>
+   <div id="bottom">
+    <button onclick="addrow()" id="row">+Add Row</button>
+    <button id="column" onclick="addcol()">+Add Column</button>
+    <button id="save" onclick="save()">Save</button>
+    <button id="clear" onclick="clear1()">Clear</button>
+   </div>
+   <script src="script.js"></script>
+
+</body>
+</html>

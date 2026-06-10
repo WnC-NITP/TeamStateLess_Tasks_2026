@@ -1,0 +1,65 @@
+h1{  text-align: center;
+    border-radius:5px;
+    border-color:black;
+    background-color:rgb(236, 227, 216);
+    margin:0px;
+    padding:0px;
+}
+th,td{height:30px;
+width:80px;}
+table ,th,td{ 
+    border-collapse:collapse;
+    border:1px groove black;
+}
+#row{
+    background-color: rgb(53, 196, 53);
+    border-radius: 5px;
+}
+#column{
+    background-color: rgb(94, 30, 196);
+    border-radius: 5px;
+}
+#save{
+    background-color: rgb(53, 196, 53);
+    border-radius: 5px;
+}
+#clear{
+    background-color: rgb(162, 47, 15);
+    border-radius: 5px;
+}
+#undo, #redo {
+    background-color: rgb(66, 133, 244);
+    border-radius: 5px;
+    color: white;
+}
+#searchBox {
+    width: 220px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+#toolbar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(236, 227, 216);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40px;
+}
+div{margin-top:20px;
+    padding:10px;
+    background-color: rgb(236, 227, 216);
+    display:flex;
+    gap:50px;
+    justify-content: center;
+    
+}
+body{margin:0px;
+    padding:0px;
+    border:2px solid black;
+}
+#para{
+    display:flex;
+}
