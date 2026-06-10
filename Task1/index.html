@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="spreadsheet">
+        <h1>Spreadsheet Application</h1>
+
+        <div id="cell-info">
+            Selected Cell:
+        </div>
+
+        <div id="formula-bar">
+            Formula Bar:
+            <input
+            type="text"
+            id="formula-input"
+            placeholder="Enter value or formula"
+            >
+        </div>
+
+        <div id="grid-container">
+            <!-- cells inserts here -->
+        </div>
+
+        <div id="buttons">
+            <button id="add-row-btn">Add Row</button>
+            <button id="add-col-btn">Add Col</button>
+            <button id="save-btn">Save</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
