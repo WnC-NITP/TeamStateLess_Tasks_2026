@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+#spreadsheet{
+    max-width:1200px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#cell-info{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+#formula-bar{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#formula-input{
+    width:400px;
+    padding:10px;
+    font-size:18px;
+    margin-left:10px;
+}
+
+#grid-container{
+    display: grid;
+    gap: 0;
+    overflow: auto;
+    margin-left: 10px;
+}
+
+.top-left-corner,
+.column-header,
+.row-header,
+.cell{
+    width: 120px;
+    height: 60px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.top-left-corner,
+.column-header,
+.row-header{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.cell{
+    background-color: white;
+}
+
+.selected-cell{
+    border: 3px solid green;
+}
+
+#buttons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    border:none;
+    padding:14px 30px;
+    font-size:20px;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#add-row-btn{
+    background: #27ae60;
+}
+
+#add-col-btn{
+    background: #2d6cdf;
+}
+
+#save-btn{
+    background: #28a745;
+}
+
+#clear-btn{
+    background: #e74c3c;
+}
