@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="spreadsheet_container">
+        <div class="top">
+            <div class="heading">
+                <h1 id="top">Spreadsheet Application</h1>
+            </div>
+            <div class="info">
+                <span id="h6">Selected Cell: <span id="cellValue"></span></span>
+                <p id="h6">Formula Bar: <input type="text" id="fill" placeholder="Select a Cell to enter text or Formula -> =A1+B2"></p>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="grid"></div>
+        </div>
+        <div class="bottom">
+            <button class="button add" id="row">+ Add Row</button>
+            <button class="button add" id="column">+ Add Column</button>
+            <button class="button save" id="save">Save</button>
+            <button class="button clear" id="clear">Clear</button>
+        </div>
+    </div>
+    <button class="mode" id="mode">Switch Mode</button>
+    <script src="app.js"></script>
+</body>
+</html>
