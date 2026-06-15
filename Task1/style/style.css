@@ -234,3 +234,9 @@ body {
 #auto-save.active:hover {
   background-color: #4a148c;
 }
+.selected-cell {
+    border: 2px solid #217346 !important; /* Excel Green outline */
+    background-color: #e2f0d9; /* Subtle light green background fill */
+    outline: none; /* Prevents the browser's default blue ring */
+    z-index: 10; /* Ensures the thick border draws on top of neighboring cells */
+}
