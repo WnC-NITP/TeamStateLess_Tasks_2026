@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     autoSaveBoolean = !autoSaveBoolean;
     alert(autoSaveBoolean ? "Auto save on" : "Auto save off");
   });
-
+  //
   function saveChange() {
     const cell = document.querySelectorAll(".cell4input");
     cell.forEach((singleInput) => {
