@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1 class="heading">Spreadsheet Application</h1>
+
+    <div id="enterRCBox">
+        <p class="eRow">Enter Rows: <input type="number" id="rTo"></p>
+        <p class="eColumn">Enter Columns: <input type="number" id="cTo"></p>
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <div id="container" class="container">
+        <div class="formula-bar-container">
+            <span class="cell-indicator" id="cell-indicator">_</span>
+            <input type="text" id="formula-bar" placeholder="Enter text or formula (=A1+B1)" disabled />
+        </div>
+            <div class="spreadContainer" id="spreadContainer">
+                
+            </div>
+            <div class="container4btn">
+                <button id="add-row-btn">ADD ROW</button>
+                <button id="add-column-btn">ADD COLUMN</button>
+                <button id="save-change">SAVE</button>
+                <button id="clear-btn">CLEAR</button>
+                <button id="auto-save">Auto Save</button>
+
+            </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
