@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spreadsheet Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header>
+            <h1 style="margin: 0px; color: black; text-align: center;">Spreadsheet Application</h1>
+        </header>
+
+        <div class="formula-zone">
+            <div class="label-row">
+                Selected Cell: <span id="current-cell-id">None</span>
+            </div>
+            <div class="input-row">
+                <input type="text" id="formula-bar" placeholder="Click a cell, then enter numbers, or formulas like =SUM(A1:A3)" disabled>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <table id="spreadsheet">
+                <thead>
+                    <tr id="header-row">
+                        </tr>
+                </thead>
+                <tbody id="sheet-body">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="toolbar">
+            <button id="btn-row" class="btn-mint">+ Add Row</button>
+            <button id="btn-col" class="btn-sky">+ Add Column</button>
+            <button id="btn-undo" class="btn-lavender">↩️ Undo</button>
+            <button id="btn-redo" class="btn-lavender">↪️ Redo</button>
+            <button id="btn-theme" class="btn-orange">🌓 Theme Mode</button>
+            <button id="btn-clear" class="btn-coral">🗑️ Clear Sheet</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
