@@ -1,0 +1,29 @@
+.spreadsheet{
+    display:grid;
+    
+    
+    grid-template-columns: 50px repeat(10,100px);
+    grid-template-rows: 50px repeat(10,100px);
+
+}
+
+.cell{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+}
+.selected{
+    border:5px solid black;
+}
+.formula-container{
+    margin:10px 0;
+}
+
+#formulaBar{
+    width:300px;
+    padding:8px;
+}
