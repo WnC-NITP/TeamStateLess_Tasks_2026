@@ -1,0 +1,187 @@
+
+
+body {
+    font-family: "Comic Sans MS", "Segoe UI", sans-serif;
+    background-color: #b4cce9;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    background-color: rgb(215, 239, 254);
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 950px;
+}
+
+.formula-zone {
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.label-row {
+    background-color: lightgray;
+    padding: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#current-cell-id {
+    color: rgb(236, 95, 112);
+    background-color: white;
+    padding: 1px 6px;
+    border: 1px solid black;
+}
+
+#formula-bar {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: monospace;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.canvas {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    overflow: auto;
+    max-height: 320px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #e6f4f7;
+    color: black;
+    font-size: 13px;
+    padding: 6px;
+    font-weight: bold;
+    min-width: 50px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+.cell-input {
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+td.cell-focus {
+    outline: 2px solid rgb(217, 93, 163);
+    background-color: rgb(230, 173, 225) !important;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e2eef4;
+    padding: 10px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(204, 204, 204) !important;
+    color: black !important;
+}
+
+.btn-mint { background-color: rgb(85, 153, 85); border-radius: 5px;}
+.btn-sky { background-color: rgb(44, 138, 233); border-radius: 5px}
+.btn-lavender { background-color: purple; border-radius: 5px}
+.btn-orange { background-color: orange; border-radius: 5px}
+.btn-coral { background-color: crimson; margin-left: auto; border-radius: 5px}
+
+
+
+body.dark-theme {
+    background-color: #222222;
+}
+
+body.dark-theme .app-container {
+    background-color: #615e61;
+    border-color: white;
+}
+
+body.dark-theme h1 { color: white !important; }
+body.dark-theme p { color: lightgray !important; }
+
+body.dark-theme th {
+    background-color: #4e4b4d;
+    color: white;
+    border-color: white;
+}
+
+body.dark-theme td {
+    border-color: lightgray;
+}
+
+body.dark-theme .cell-input {
+    color: white;
+}
+
+body.dark-theme .canvas {
+    background-color: #444444;
+    border-color: white;
+}
+
+body.dark-theme .formula-zone {
+    border-color: white;
+}
+
+body.dark-theme .label-row {
+    background-color: #555555;
+    color: white;
+    border-color: white;
+}
+
+body.dark-theme #formula-bar {
+    background-color: #333333;
+    color: white;
+}
+
+body.dark-theme .toolbar {
+    background-color: #555555;
+    border-color: white;
+}
+
+body.dark-theme td.cell-focus {
+    outline: 3px solid yellow;
+    background-color: #445566 !important;
+}
